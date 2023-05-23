@@ -12,18 +12,51 @@
     display: none;
   }
 }
+.section-team > .container {
+  max-width: 294px;
+}
 
-@media screen and (max-width: 428) {
+/* ====================== 428 ==================== */
+
+@media screen and (min-width: 428px) {
   .container {
     max-width: 396px;
   }
+
+  /* ===================== Hero =================== */
+
+  /* .hero {
+    padding-top: 112px;
+    padding-bottom: 122px;
+    max-width: 428px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+  } */
+  /* ======================= Section 4 =============== */
+
+  /* .team-list {
+    padding-left: 80px;
+    padding-right: 80px;
+  } */
+
+  /* =============Section 5 =========== */
+  .client-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .client-link-customer {
+    width: calc((100% - 24px) / 2);
+    height: 88px;
+  }
 }
 
-/* ================7 6 8 =============== */
+/* ================ 768 =============== */
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 766px;
   }
   .navigate,
   .site-nav {
@@ -82,8 +115,8 @@
   /* -----------------   Hero ------------------ */
   .hero {
     max-width: 736px;
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);  */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
   }
 
   .hero-title {
@@ -94,14 +127,13 @@
     margin: 0 auto;
     margin-bottom: 36px;
   }
-  /* --------------------Section 2 ---------------- */
+  /* --------------------Section 2 --------- */
 
   .feature-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    max-width: 736px;
   }
   .feature-text {
     width: calc((100% - 24px) / 2);
@@ -110,12 +142,69 @@
   .title {
     text-align: left;
   }
+
+  /* ===============Section 3 ================ */
+  /* ===============Section 4 ================ */
+
+  .section-team > .container {
+    max-width: 582px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+  .team-pic {
+    width: calc((100% - 60px) / 2);
+  }
+
+  /* ================ Section 5 =============== */
+  .section-customers > .container {
+    max-width: 582px;
+  }
+
+  .client-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .client-link-customer {
+    width: calc((100% - 90px) / 3);
+    height: 88px;
+  }
+  /* ================== footer =================== */
+
+  .footer-section {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+  .footer-content {
+    /* margin-left: 0; */
+    margin-right: 24px;
+    margin-bottom: 72px;
+    text-align: left;
+  }
+  .text-footer {
+  }
+  .subscribe {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 24px;
+    margin-left: 0;
+  }
+  .subscribe-input {
+    max-width: 264px;
+  }
 }
 
-/* ===============Srction 3 ================ */
-/* ===============Srction 4 ================ */
-
-/* ================ 1 1 5 8 ================ */
+/* ================ 1158 ================ */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -138,18 +227,14 @@
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);  */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
   }
   .hero-title {
     margin-bottom: 48px;
   }
   /* -------------------------Section 2 ---------------- */
 
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
   .feature-list {
     display: flex;
     justify-content: center;
@@ -174,14 +259,68 @@
     font-size: 16px;
     line-height: 1.5;
   }
-}
-/* ===============Srction 3 ================ */
-/* ===============Srction 4 ================ */
-.team-list {
-  justify-content: space-between;
-  display: flex;
-  gap: 24px;
-}
-.team-pic {
-  width: calc((100% - 72px) / 4);
+
+  /* ===============Section 3 ================ */
+  /* ===============Section 4 ================ */
+  .section-team > .container {
+    max-width: 1158px;
+  }
+
+  .team-list {
+    justify-content: space-between;
+    display: flex;
+    gap: 24px;
+  }
+  .team-pic {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /* ================= Section 5 ============= */
+  .section-customers > .container {
+    max-width: 1158px;
+  }
+
+  .client-link {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .client-link-customer {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+  }
+
+  /* ==================== Footer =============== */
+
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-link {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  .footer-section {
+    align-items: baseline;
+    display: flex;
+  }
+  .footer-content {
+    margin-right: 120px;
+  }
+  .social {
+    margin-right: 80px;
+  }
+  .social-link-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  .social-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .subscribe {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+  }
 }
