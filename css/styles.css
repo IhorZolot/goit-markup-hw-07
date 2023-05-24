@@ -6,6 +6,7 @@
   --background: #f4f4fd;
   --focus-hover-color: #404bbf;
   --botton-border-color: #e7e9fc;
+  --gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 h1,
 h2,
@@ -99,14 +100,6 @@ body {
   transition-duration: 250ms;
 }
 
-.mobile-menu-open {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-  stroke: black;
-}
-
 /* .head-link:not(:last-child) {
   margin-right: 40px;
 } */
@@ -169,11 +162,16 @@ body {
   max-width: 428px;
   margin-left: auto;
   margin-right: auto;
-  /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg); */
+  background-image: var(--gradient), url(../images/Dark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: var(--gradient), url(../images/2x/Dark-bg-mob.jpg);
+  }
 }
 
 .hero-title {
@@ -473,6 +471,7 @@ body {
   width: 264px;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 
 .social {
@@ -513,7 +512,7 @@ body {
 }
 .social-link-icon-item:hover,
 .social-link-icon-item:focus {
-  background-color: var(--accent-color);
+  background-color: #31d0aa;
 }
 .subscribe {
   display: flex;
@@ -522,6 +521,7 @@ body {
   justify-content: center;
   text-align: center;
   gap: 16px;
+  width: 100%;
 }
 .subscribe-title {
   color: var(--primari-white-color);
@@ -538,7 +538,7 @@ body {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding-left: 16px;
 }
@@ -547,6 +547,10 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
+}
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: var(--accent-color);
 }
 
 .subscribe-button {
@@ -564,6 +568,14 @@ body {
   border: none;
   padding: 8px 24px;
   gap: 16px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--primari-white-color);
+  background: var(--focus-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .subscribe-link-footer {
   fill: var(--primari-white-color);
@@ -691,7 +703,8 @@ body {
 
 .modal-window {
   position: absolute;
-  width: 408px;
+  max-width: 392px;
+  width: 100%;
   min-height: 576px;
   left: 50%;
   top: 50%;

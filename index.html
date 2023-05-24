@@ -62,64 +62,76 @@
       <!-- ==================Mobile-menu====================== -->
       <div class="mobile-menu-window" data-menu>
         <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu-close" data-menu-close>
-            <svg width="8" height="8" class="button-effects">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="site-nav-menu list">
-            <li class="head-link-menu">
-              <a href="./index.html" class="link padding-link-menu-color">Studio</a>
-            </li>
-            <li class="head-link-menu">
-              <a href="./portfolio.html" class="link padding-link-menu">Portfolio</a>
-            </li>
-            <li class="head-link-menu">
-              <a href="" class="link padding-link-menu">Contacts</a>
-            </li>
-          </ul>
-          <ul class="auth-nav-menu list">
-            <li>
-              <a href="tel:+110001111111" class="link padding-link-number"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link padding-link-mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="social-link-menu list">
-            <li class="social-link-item">
-              <a href="" class="social-list-link">
-                <svg width="16" height="16" class="social-link-net">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link-item">
-              <a href="" class="social-list-link">
-                <svg width="16" height="16" class="social-link-net">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link-item">
-              <a href="" class="social-list-link">
-                <svg width="16" height="16" class="social-link-net">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link-item">
-              <a href="" class="social-list-link">
-                <svg width="16" height="16" class="social-link-net">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div>
+            <button type="button" class="mobile-menu-close" data-menu-close>
+              <svg width="8" height="8" class="button-effects">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="site-nav-menu list">
+              <li class="head-link-menu">
+                <a
+                  href="./index.html"
+                  class="link padding-link-menu padding-link-menu-color"
+                  >Studio</a
+                >
+              </li>
+              <li class="head-link-menu">
+                <a href="./portfolio.html" class="link padding-link-menu">Portfolio</a>
+              </li>
+              <li class="head-link-menu">
+                <a href="" class="link padding-link-menu">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="auth-nav-menu list">
+              <li class="mobile-menu-adress">
+                <a
+                  href="tel:+110001111111"
+                  class="link padding-link-menu padding-link-number"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link padding-link-menu padding-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="social-link-menu list">
+              <li class="social-link-item">
+                <a href="" class="social-list-link">
+                  <svg width="16" height="16" class="social-link-net-menu">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="" class="social-list-link-menu">
+                  <svg width="16" height="16" class="social-link-net-menu">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="" class="social-list-link">
+                  <svg width="16" height="16" class="social-link-net-menu">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="" class="social-list-link">
+                  <svg width="16" height="16" class="social-link-net">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -477,7 +489,7 @@
       </div>
     </footer>
     <!-- ===========================Modal Window ===================== -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-button" data-modal-close>
           <svg width="8" height="8" class="button-effects">
@@ -542,7 +554,7 @@
           <button type="submit" class="button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
